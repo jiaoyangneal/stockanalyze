@@ -20,13 +20,13 @@
                    
           <property name="hibernate.connection.pool.size">20</property>  
                   
-          <property name="hibernate.show_sql">true</property>
+          <!--   <property name="hibernate.show_sql">true</property> -->
           
-          <property name="format_sql">true</property>
+          <!--  <property name="format_sql">true</property>  -->
              
           <property name="jdbc.fetch_size">1000</property> 
             
-          <property name="jdbc.batch_size">50</property> 
+          <property name="jdbc.batch_size">100</property> 
             
           <property name="jdbc.use_scrollable_resultset">false</property>  
            
@@ -41,6 +41,8 @@
 		  <property name="hbm2ddl.auto">update</property> 
 		
 		  <mapping class="com.neal.stock.data.model.AllStockModel"/>
+		  
+		  <mapping class="com.neal.stock.data.model.YahooStockModel" />
 		  
 	</session-factory>
 </hibernate-configuration>

@@ -78,7 +78,7 @@ public class EastmoneyStockList {
 				Matcher matcher = pattern.matcher(text);
 				if(matcher.matches()){
 					String stock_name = matcher.group(1);
-					String stock_code = matcher.group(2) + ".sh";
+					String stock_code = matcher.group(2) + ".ss";
 					map.put(stock_code, stock_name);
 				}
 			}
